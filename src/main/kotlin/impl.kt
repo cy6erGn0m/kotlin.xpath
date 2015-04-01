@@ -1,5 +1,6 @@
 package kotlin.dom.xpath
 
+import org.w3c.dom.Element
 import org.w3c.dom.Node
 import kotlin.dom.xpath.xerces.evaluateImpl
 
@@ -35,5 +36,5 @@ public fun ValueResult<*>.toStringResult() : ValueResult<String> = object : Valu
 }
 
 public fun Set.toList() : List<Node> = sequence().toList()
-
+public fun Sequence<Node>.filterIsElement() : Sequence<Element> = sequence().filter { it is Element }.map { it as Element }
 
