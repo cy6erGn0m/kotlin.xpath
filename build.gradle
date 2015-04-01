@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'http://oss.sonatype.org/content/repositories/snapshots'
+        }
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.1-SNAPSHOT'
+    }
+}
+
+apply plugin: "kotlin"
+//apply plugin: "kotlin2js"
+//compileKotlin2Js.kotlinOptions.outputFile = "build/main.js"
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:0.1-SNAPSHOT'
+//    compile 'org.jetbrains.kotlin:kotlin-reflect:0.1-SNAPSHOT'
+//    compile 'org.jetbrains.kotlin:kotlin-js-library:0.1-SNAPSHOT'
+}
