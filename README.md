@@ -48,3 +48,12 @@ fun main(args: Array<String>) {
             }
 }
 ```
+
+The code above will produce output:
+
+```
+gradleHome = /usr/java/gradle-2.3
+gradleJvm = 1.6
+
+Process finished with exit code 0
+```
